@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-02-27 Thu 16:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Youth Center for Social Leap</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Thirumal Ravula" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../style/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="../style/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../style/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="../style/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">A Youth Center for Social Leap</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd7e3981">1. Introduction</a></li>
+<li><a href="#org2308fcf">2. The Idea</a></li>
+<li><a href="#orgced03a5">3. Making it Happen</a>
+<ul>
+<li><a href="#org884b50b">3.1. Setting up of an NGO</a></li>
+<li><a href="#org6bc22cd">3.2. The place</a></li>
+<li><a href="#org127a18c">3.3. The Building</a></li>
+</ul>
+</li>
+<li><a href="#org3e01578">4. Costs</a>
+<ul>
+<li><a href="#orgc099b7e">4.1. Building</a>
+<ul>
+<li><a href="#orga259383">4.1.1. Build Square Feet Rate</a></li>
+<li><a href="#org0479e49">4.1.2. Constructing the Building</a></li>
+</ul>
+</li>
+<li><a href="#org987a2dc">4.2. Training the artisans</a>
+<ul>
+<li><a href="#orgcb0b2bc">4.2.1. On site Training per Person</a></li>
+<li><a href="#org937a424">4.2.2. Cummulative On Site Training</a></li>
+<li><a href="#orgfada239">4.2.3. Workshop Training per person</a></li>
+<li><a href="#org68174b5">4.2.4. Cummulative Workshop Training</a></li>
+</ul>
+</li>
+<li><a href="#org1b9af31">4.3. Building Equipment</a></li>
+<li><a href="#orge2c8375">4.4. Furniture</a></li>
+<li><a href="#org5691cbe">4.5. Books</a></li>
+<li><a href="#org6dbf783">4.6. Computers</a></li>
+<li><a href="#org666cc90">4.7. Maintenance and Contingency</a></li>
+</ul>
+</li>
+<li><a href="#org19b8bad">5. About Me</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd7e3981" class="outline-2">
+<h2 id="orgd7e3981"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This document lists every thing necessary in setting up a
+youth center at <a href="https://www.google.com/maps/place/Chityal,+Telangana/@17.5379641,79.5922424,14z/data=!3m1!4b1!4m5!3m4!1s0x3a34bb00bc6c49cd:0x4723b6fd9e64bcbe!8m2!3d17.5428796!4d79.6109049">Chityal</a> Village, Mahaboobabad district,
+Telangana.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2308fcf" class="outline-2">
+<h2 id="org2308fcf"><span class="section-number-2">2</span> The Idea</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+I have been visiting my village over the weekends for quite
+some time for the last few years.  The village has a
+population of around 2500.  I go there since we have our
+ancestral house and a farm.  I learned how to farm and I
+also get involved in it while I am there.  During this time,
+I also try to interact with the school and college students.
+There is a high school till 10th standard in the village
+which is pretty decent and the students go the nearest
+mandal head quarters - Thorrur - for the college.  Most of
+these conversations end up in a sense of despondency with
+the students having no clue about their future.  What we set
+upon ourselves is: loose gradually the existing skills while
+we stop short of gaining proficiency in what we have learned
+or learning.
+</p>
+
+<p>
+This is not a simple problem that we can get away with.  One
+of the first steps is for all us in the community to come
+together and have a conversation around it and build a
+platform to nourish solidarity.  It is my belief that a
+library doubling up as a youth center can facilitate such a
+setting.
+</p>
+
+<p>
+Articulation of this conversation is a first step in
+empowering ourselves.  Here, the students bring their
+insights to various aspects of their living life with
+respect to sanitation, health, environment, farming, career
+opportunities, development, employment generation, a
+critique of the current policies, etc.  With few computers
+at the youth center, we learn how to publish them on web to
+bring out a magazine.  These articles are bundled
+fortnightly or monthly for print and distribution among the
+villagers.  With such an effort, not only do we start a
+conversation but also learn skills to write and publish on
+the web.
+</p>
+
+<p>
+The center also brings people from the outside - the city -
+with certain skills and knowledge to interact with the
+locals.  These interactions can range from helping build
+computer systems to sell the locally grown produce; talk
+about practices and techniques in organic farming; teaching
+or performing arts; laying out different career
+opportunities and paths to get there, etc.
+</p>
+
+<p>
+Once a space is established for collaboration, the
+possibilities are limitless and the confidence that emanates
+self empowerment helps redefine development hinged to 'small
+is beautiful' to be sustainable, equitable and democratic.
+</p>
+
+<p>
+For example, through the skills developed at the center, the
+community builds a solar power generation and management
+system using either raspberry pies or arduino boards.  At
+peak generation, the resource - the power generated - is
+used to charge batteries that run the local transport while
+at all times a handle to the resource management is
+maintained.  Our hope is myriad such applications and ideas
+emanate from this space that are totally grounded to solve
+the local problems.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgced03a5" class="outline-2">
+<h2 id="orgced03a5"><span class="section-number-2">3</span> Making it Happen</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+As we learn and envisage, the end is a process that is
+evolved through iterations.  In the first iteration, we
+build the center.  
+</p>
+</div>
+
+<div id="outline-container-org884b50b" class="outline-3">
+<h3 id="org884b50b"><span class="section-number-3">3.1</span> Setting up of an NGO</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The name of this organization is <code>Social Leap</code>.  There are
+<a href="https://ngosindia.com/ngo-registration/ngo-registration-methods/">different</a> ways to register a non governmental organization.
+We either register the NGO as a trust or as a society.  I
+will post more information once this decision is made.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6bc22cd" class="outline-3">
+<h3 id="org6bc22cd"><span class="section-number-3">3.2</span> The place</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+I am setting out nearly 2000 sq yards from a piece of land
+that is in my name.  There is a possibility to acquire
+another 2000 to 3000 sq yards once the gains momentum and
+some bearing of fruition.  The place at the far end of
+street in the picture
+</p>
+
+
+<div class="figure">
+<p><img src="./img/place-one.jpg" alt="place-one.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>view from the street</p>
+</div>
+
+
+
+<div class="figure">
+<p><img src="./img/the-place.jpg" alt="the-place.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 2: </span>The actual place</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org127a18c" class="outline-3">
+<h3 id="org127a18c"><span class="section-number-3">3.3</span> The Building</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+To start off, a 1000 sq ft building will suffice to hold
+books and a few computers and function as a reading room.
+This will also include a 10 x 10 sq ft private space that
+works as an office for the organization.  The building
+structure will allow for another stair on top at a later
+stage to accommodate a meeting room.
+</p>
+
+<p>
+Instead of constructing the youth center the usual way with
+cement and concrete, the plan is to use the local materials.
+This effort is also to evangelize the techniques pioneered
+by <a href="http://gramavidya.org/home">Gramavidya</a>, an organization developing alternative and
+energy efficient construction technologies.
+</p>
+
+<p>
+Recently, I visited a place near Hyderabad, where they have
+built a nice hall and few office rooms using the techniques
+developed at Gramavidya.  All the photos here are from
+there. 
+</p>
+
+
+
+<div class="figure">
+<p><img src="./img/hall-and-office.jpg" alt="hall-and-office.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 3: </span>The Hall and the Offices</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/hall-close-up.jpg" alt="hall-close-up.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 4: </span>A closer look at the Hall</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/interior-with-ceiling.jpg" alt="interior-with-ceiling.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 5: </span>Interior and Part Ceiling</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/ceiling.jpg" alt="ceiling.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Interior and Part Ceiling</p>
+</div>
+
+
+
+<div class="figure">
+<p><img src="./img/exterior.jpg" alt="exterior.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 7: </span>The exterior</p>
+</div>
+
+
+<p>
+Gramavidya trains artisans in making the bricks from the
+local soil available.  They conduct workshops year round.
+The bricks are not baked but pressed using a small
+hand-operated machine.  The soil - either red gravel or
+clay - is sifted to which 10% cement and some lime is added.
+The proportions vary a little based on the clay content.
+Gramavidya will determine these portions once a sample is
+sent to them.  The blocks used for wall are solid while the
+blocks used in the roof are hollow.  By using the hollow
+bricks for the roof, the amount of reinforced cement
+concrete used for the slab goes down by almost 50-60%.
+</p>
+
+<p>
+By choosing to go this way, the youth center is conceived on
+strong foundations of sustainability.  The construction
+itself starts generating interest and participation while
+imparting skills to the community.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e01578" class="outline-2">
+<h2 id="org3e01578"><span class="section-number-2">4</span> Costs</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+This lists out the entire cost for the project.  The
+breakdown is in the below sections.
+</p>
+
+<table id="org4723eb8" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">S.no</th>
+<th scope="col" class="org-left">Description</th>
+<th scope="col" class="org-right">Cost (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1.</td>
+<td class="org-left">Building</td>
+<td class="org-right">800000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2.</td>
+<td class="org-left">Training artisans</td>
+<td class="org-right">100000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">3.</td>
+<td class="org-left">Sifting &amp; Pressing Equipment</td>
+<td class="org-right">200000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">4.</td>
+<td class="org-left">Furniture</td>
+<td class="org-right">50000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">5.</td>
+<td class="org-left">Books</td>
+<td class="org-right">200000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">6.</td>
+<td class="org-left">Computers</td>
+<td class="org-right">50000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">7.</td>
+<td class="org-left">Maintenance</td>
+<td class="org-right">100000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Total</td>
+<td class="org-right">1500000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgc099b7e" class="outline-3">
+<h3 id="orgc099b7e"><span class="section-number-3">4.1</span> Building</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+List cost for building the facility.
+</p>
+</div>
+
+<div id="outline-container-orga259383" class="outline-4">
+<h4 id="orga259383"><span class="section-number-4">4.1.1</span> Build Square Feet Rate</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+From the discussions with the people who have used these
+techniques, it was suggested that cost for a square feet is
+Rs 800. 
+</p>
+
+<table id="orga0dcb07" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Rate/sq ft (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">800</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org0479e49" class="outline-4">
+<h4 id="org0479e49"><span class="section-number-4">4.1.2</span> Constructing the Building</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<p>
+Given the cost per square feet is Rs. 800/-, we calculate
+the cost for the 1000 square feet building.
+</p>
+
+<table id="orgaf1e307" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Building Area</th>
+<th scope="col" class="org-right">Rate</th>
+<th scope="col" class="org-right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1000</td>
+<td class="org-right">800.00</td>
+<td class="org-right">800000.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org987a2dc" class="outline-3">
+<h3 id="org987a2dc"><span class="section-number-3">4.2</span> Training the artisans</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+We will train two people from the village in construction
+techniques.  This will include attending couple of workshops
+and staying at the site near Hyderabad where such a building
+is being built for couple of months.  At the site from where
+I posted the images of the building, another house is being
+built.
+</p>
+
+<table id="org25706cb" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">S.no</th>
+<th scope="col" class="org-left">Description</th>
+<th scope="col" class="org-right">Cost (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1.</td>
+<td class="org-left">On Site Training</td>
+<td class="org-right">60000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2.</td>
+<td class="org-left">Workshops</td>
+<td class="org-right">40000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Total</td>
+<td class="org-right">100000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgcb0b2bc" class="outline-4">
+<h4 id="orgcb0b2bc"><span class="section-number-4">4.2.1</span> On site Training per Person</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+On average this includes the travel expenses, lodging and
+boarding and a monthly salary.  This is the cost per person
+for a month.
+</p>
+<table id="org1b2e7a2" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Cost/Person (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">15000</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org937a424" class="outline-4">
+<h4 id="org937a424"><span class="section-number-4">4.2.2</span> Cummulative On Site Training</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<p>
+List the costs for training 2 persons at the construction
+site.
+</p>
+<table id="orgdb3abfe" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">No. of People</th>
+<th scope="col" class="org-right">Rate/month (Rs)</th>
+<th scope="col" class="org-right">No. of months</th>
+<th scope="col" class="org-right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">15000.00</td>
+<td class="org-right">2</td>
+<td class="org-right">60000.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgfada239" class="outline-4">
+<h4 id="orgfada239"><span class="section-number-4">4.2.3</span> Workshop Training per person</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<p>
+Grama Vidya conducts workshops in disseminating the
+information.  Typically these are held for 3 - 4 days.
+There is some information <a href="http://gramavidya.org/brochure/february-brochure-2020.gif">here</a> about a past workshop.
+</p>
+
+<table id="org054f055" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Cost/Workshop (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10000</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org68174b5" class="outline-4">
+<h4 id="org68174b5"><span class="section-number-4">4.2.4</span> Cummulative Workshop Training</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<table id="org8e43ced" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">No. of People</th>
+<th scope="col" class="org-right">Rate/month (Rs)</th>
+<th scope="col" class="org-right">No. of workshops</th>
+<th scope="col" class="org-right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">10000.00</td>
+<td class="org-right">2</td>
+<td class="org-right">40000.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1b9af31" class="outline-3">
+<h3 id="org1b9af31"><span class="section-number-3">4.3</span> Building Equipment</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+The equipment for sifting soil and the for bricks are
+needed.  
+</p>
+
+<table id="orgf8f371d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">S.no</th>
+<th scope="col" class="org-left">Desc</th>
+<th scope="col" class="org-right">Cost (Rs)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1.</td>
+<td class="org-left">Sifting</td>
+<td class="org-right">100000</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2.</td>
+<td class="org-left">Pressing</td>
+<td class="org-right">100000</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Total</td>
+<td class="org-right">200000.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orge2c8375" class="outline-3">
+<h3 id="orge2c8375"><span class="section-number-3">4.4</span> Furniture</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+A conservative estimate would be around Rs 50,000/- for the
+furniture to either stack books, tables, chairs etc.
+</p>
+
+<table id="org3e30e92" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Amount (Rs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">50000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org5691cbe" class="outline-3">
+<h3 id="org5691cbe"><span class="section-number-3">4.5</span> Books</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+Even if we cost on average each book at Rs. 200/-, for
+thousand books, this would cost Rs 2 lacs.  We would start
+off with this amount but slowly grow the library.
+</p>
+
+<table id="org5040acc" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Amount (Rs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">200000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6dbf783" class="outline-3">
+<h3 id="org6dbf783"><span class="section-number-3">4.6</span> Computers</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+A few computers, either used or raspberry pies connected to
+screens.
+</p>
+
+<table id="orgd52f0a1" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Amount (Rs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">50000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org666cc90" class="outline-3">
+<h3 id="org666cc90"><span class="section-number-3">4.7</span> Maintenance and Contingency</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+This would take of maintaining the facility for a year and
+leave some room for contingency.
+</p>
+
+<table id="org688b129" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Amount (Rs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">100000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org19b8bad" class="outline-2">
+<h2 id="org19b8bad"><span class="section-number-2">5</span> About Me</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+My training is in computer science and am currently managing
+a project - Virtual Labs - funded by Ministry of Human
+Resources Development at IIIT Hyderabad.  I am also
+conducting the necessary ground work like literature survey,
+reading and fine tuning the <a href="https://travula.github.io/papers/index.html">problem</a> for pursuing a PhD.  My
+proposed research will look if there is a role for computer
+science in aiding worker ownership and pave way for
+ownership democracy.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2020-02-23 Sun 00:00</p>
+<p class="author">Author: Thirumal Ravula</p>
+<p class="date">Created: 2020-02-27 Thu 16:51</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
