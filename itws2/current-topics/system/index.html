@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Introduction to  Systems</title>
+<!-- 2020-12-12 Sat 19:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="VLEAD" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../../style/css/worg-style.css" />
+<link rel="stylesheet" type="text/css" href="../../style/css/override.css" />
+<link rel="icon" type="image/png" href="../../style/img/favicon/popl.png" />
+<script type="text/javascript" src="../../style/js/org-info.js">
+/**
+ *
+ * @source: ../../style/js/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in ../../style/js/org-info.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in ../../style/js/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "1");
+org_html_manager.set("LINK_HOME", "../../index.html");
+org_html_manager.set("LINK_UP", "../index.html");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../index.html"> UP </a>
+ |
+ <a accesskey="H" href="../../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Introduction to  Systems</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Closed Systems</a></li>
+<li><a href="#sec-1-2">1.2. Open Systems</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. What is a system?</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Informal Notion</a></li>
+<li><a href="#sec-2-2">2.2. Standard definition</a></li>
+<li><a href="#sec-2-3">2.3. Example: a simple counter</a></li>
+<li><a href="#sec-2-4">2.4. Actors</a></li>
+<li><a href="#sec-2-5">2.5. Interconnected  Systems</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-latex" id="macros">  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\set</span>}[1]{<span style="font-weight: bold;">\mbox</span>{<span style="font-style: italic;">$\{#1\}$</span>}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\pair</span>}[1]{<span style="font-weight: bold;">\mbox</span>{<span style="font-style: italic;">$\langle #1\rangle$</span>}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\tuple</span>}[1]{<span style="font-weight: bold;">\mbox</span>{<span style="font-style: italic;">$\langle #1\rangle$</span>}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\union</span>}{<span style="font-weight: bold;">\cup</span>}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\Union</span>}{<span style="font-weight: bold;">\bigcup</span>}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\intersection</span>}{<span style="font-weight: bold;">\cap</span>}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\id</span>}[1]{<span style="font-weight: bold;">\mathit</span>{#1}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\N</span>}{<span style="font-weight: bold;">\mathbb</span>{N_0}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\Z</span>}{<span style="font-weight: bold;">\mathbb</span>{Z}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\Bool</span>}{<span style="font-weight: bold;">\mathbb</span>{B}}
+  <span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\Rp</span>}{{<span style="font-weight: bold;">\mathbb</span>{R}}^+}
+<span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\ra</span>}[1]{<span style="font-weight: bold;">\kern</span>-1.5ex<span style="font-weight: bold;">\xrightarrow</span>{\ \ #1\ \ }<span style="font-weight: bold;">\phantom</span>{}<span style="font-weight: bold;">\kern</span>-1.5ex}
+<span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\ras</span>}[1]{<span style="font-weight: bold;">\kern</span>-1.5ex<span style="font-weight: bold;">\xrightarrow</span>{\ \ <span style="font-weight: bold;">\smash</span>{#1}\ \ }<span style="font-weight: bold;">\phantom</span>{}<span style="font-weight: bold;">\kern</span>-1.5ex}
+<span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\da</span>}[1]{<span style="font-weight: bold;">\bigg\downarrow\raise</span>.5ex<span style="font-weight: bold;">\rlap</span>{<span style="font-weight: bold;">\scriptstyle</span>#1}}
+<span style="font-weight: bold;">\newcommand</span>{<span style="font-weight: bold;">\ua</span>}[1]{<span style="font-weight: bold;">\bigg\uparrow\raise</span>.5ex<span style="font-weight: bold;">\rlap</span>{<span style="font-weight: bold;">\scriptstyle</span>#1}}
+</pre>
+</div>
+\(
+  \newcommand{\set}[1]{\mbox{$\{#1\}$}}
+  \newcommand{\pair}[1]{\mbox{$\langle #1\rangle$}}
+  \newcommand{\tuple}[1]{\mbox{$\langle #1\rangle$}}
+  \newcommand{\union}{\cup}
+  \newcommand{\Union}{\bigcup}
+  \newcommand{\intersection}{\cap}
+  \newcommand{\id}[1]{\mathit{#1}}
+  \newcommand{\N}{\mathbb{N_0}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Bool}{\mathbb{B}}
+  \newcommand{\Rp}{{\mathbb{R}}^+}
+
+\newcommand{\ra}[1]{\kern-1.5ex\xrightarrow{\ \ #1\ \ }\phantom{}\kern-1.5ex}
+\newcommand{\ras}[1]{\kern-1.5ex\xrightarrow{\ \ \smash{#1}\ \ }\phantom{}\kern-1.5ex}
+\newcommand{\da}[1]{\bigg\downarrow\raise.5ex\rlap{\scriptstyle#1}}
+\newcommand{\ua}[1]{\bigg\uparrow\raise.5ex\rlap{\scriptstyle#1}}
+\)
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+We start by considering closed
+and open systems. 
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Closed Systems</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Until now we worked with closed systems. 
+</li>
+
+<li>Our evaluators took an
+environment and an
+expression (and perhaps a
+store) and evaluated the
+expression in that
+environment.
+</li>
+
+<li>All that was needed for
+evaluation was supplied
+right at the beginning.
+</li>
+
+<li>Such systems are called
+<i>algorithmic</i> systems.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Open Systems</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>However, many real world
+systems <i>continue</i> to
+receive inputs <i>as they are
+running</i>.
+</li>
+
+<li>Such systems may also emit
+an output as part of their
+execution.  
+</li>
+
+<li>Such system are called
+<i>open</i> or <i>reactive
+systems</i>.
+</li>
+
+<li>Examples: Human Body,
+Ecosystem, Stock Market, Web
+Servers, etc.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> What is a system?</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Informal Notion</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Informally, a system is
+something that takes inputs,
+maintains state, and emits
+outputs.  An input event may
+cause the system's state to
+change.  This change is
+described by an <i>update
+function</i>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Standard definition</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>A tuple
+</li>
+</ul>
+
+<p>
+\[S = \pair{X, X^0, U, f:[X,U]\rightarrow X, Y,h:X\rightarrow Y}\]
+</p>
+
+<p>
+where 
+</p>
+
+<ul class="org-ul">
+<li>\(X\) is the <i>state space</i>.
+</li>
+
+<li>\(X^0\subseteq X\) is the
+<i>initial space</i>. 
+</li>
+
+<li>\(U\) is the <i>input alphabet</i>,
+i.e., the set of possible
+inputs.
+</li>
+
+<li>\(f:[X,U]\rightarrow X\) is the
+<i>update function</i>.
+</li>
+
+<li>\(Y\)  is the <i>output space</i>.
+</li>
+
+<li>\(h:X\rightarrow Y\) is the
+<i>view</i> function.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Example: a simple counter</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Suppose we want to build a
+machine that has two input
+buttons: <code>inc</code> (for increment)
+and <code>reset</code> for resetting to 0.
+</p>
+
+<p>
+The output of the machine is
+either <code>red</code> or <code>green</code>. 
+</p>
+
+<p>
+The machine's internal state
+keeps track of a counter <code>p</code>
+that is a natural number.
+Initially, <code>p</code> is zero.  Each
+time the button <code>inc</code> is
+pressed, the count <code>p</code> increases
+by one.  If <code>p</code> reaches 10, then
+the output is <code>red</code>, otherwise
+it is <code>green</code>.  Once <code>p</code> reaches
+10, any subsequent <code>inc</code> inputs
+have no effect.  Pressing a
+<code>reset</code> button immediately
+changes <code>p</code> to zero.
+</p>
+
+<p>
+This machine may be formalized
+as follows:
+</p>
+
+<ul class="org-ul">
+<li>\(U = \set{inc, reset}\)
+</li>
+<li>\(X = \set{0, \ldots, 10}\)
+</li>
+<li>\(X^0 = \set{0}\),
+</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>\(f(x,{\texttt{inc}}) = x,
+   \mbox{ if } x=10, \mbox{ and }
+   x+1,  \mbox{ otherwise}\) and
+</li>
+
+<li>\(f(x,{\texttt{reset}}) = 0\).
+</li>
+
+<li>\(h(x) = \texttt{red},
+   \mbox{ if } x = 10, \mbox{
+   and } \texttt{green}, \mbox{ otherwise}\).
+</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Actors</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+An actor is a device with an
+internal state.  It receives
+input <i>messages</i>.  Upon
+receiving a message, an actor
+updates its state and may also
+send a message to other
+actor(s).
+</p>
+
+<p>
+It's clear that an actor is a
+system.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Interconnected  Systems</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+A system is interconnected to
+another system if it shares its
+input or output with the input
+or output with another system.
+</p>
+
+<p>
+The interconnections introduce
+constraints between the dynamics
+of two systems.  
+</p>
+
+<ul class="org-ul">
+<li>Often systems are connected
+to each other to form bigger
+systems.
+</li>
+
+<li>Example: CPU system connected
+to the memory system.
+</li>
+
+<li>Example 2: Computers
+connected in a network.
+</li>
+
+<li>Example 3: Web browser and
+its interconnected systems.
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: VLEAD</p>
+<p class="date">Created: 2020-12-12 Sat 19:19</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
