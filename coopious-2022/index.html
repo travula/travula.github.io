@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-05-26 Thu 21:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coopious - Copious Cooperation</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Thirumal Ravula" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../style/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="../style/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../style/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="../style/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Coopious - Copious Cooperation</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7405931">1. Motivation</a></li>
+<li><a href="#org7e729a4">2. Plan</a></li>
+<li><a href="#orgb255a9b">3. Benefits of buying from Coopious</a></li>
+<li><a href="#orgf495095">4. Pictures</a></li>
+<li><a href="#org417eb40">5. About Me</a></li>
+<li><a href="#org3a1b42a">6. Why does this happen?</a></li>
+<li><a href="#org5c07add">7. The FUTURE</a></li>
+</ul>
+</div>
+</div>
+
+<div class="figure">
+<p><img src="../images/logo.jpg" alt="logo.jpg" />
+</p>
+</div>
+
+<div id="outline-container-org7405931" class="outline-2">
+<h2 id="org7405931"><span class="section-number-2">1</span> Motivation</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+It is a modest effort but a revolutionary one to connect
+the consumers directly to the farmers and their produce.
+This model would dissolve permanently some of the
+inveterate problems facing a consumer: access to quality
+produce; and facing a farmer: a remunerative price.  Also
+a myriad bunch of benefits would accrue both to the farmer
+and the consumer.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e729a4" class="outline-2">
+<h2 id="org7e729a4"><span class="section-number-2">2</span> Plan</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+I am harvesting the mangoes on 2022-05-27 Fri and will
+ripen them over the weekend.  I should be able to get them
+to Hyderabad packed in 10kg carton boxes with hay inside
+to allow for further ripening.  I am planning to sell them
+on 2022-06-01 Wed.  Each box costs Rs 1500/-. The produce
+is totally organic.  The orchard has bore fruit starting
+this year.  This farm never used chemical fertilizers.
+The land was fallow before we planted mango saplings.
+Please purchase and encourage.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb255a9b" class="outline-2">
+<h2 id="orgb255a9b"><span class="section-number-2">3</span> Benefits of buying from Coopious</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>The mangoes are harvested only after they reach the
+ripening stage on the tree ensuring a sweet taste that
+eludes many that are procured from retail outlets in
+the city.</li>
+
+<li>Organically grown and naturally ripened.</li>
+
+<li>To be able to connect directly to the farmer and
+influence the way farming is carried out.  However
+radical the idea is, this could have profound
+implications in mitigating many of the bad practices in
+farming leading to healthy soil, nutritious and tasty
+produce and healthy consumers.  On the whole a road
+towards sustainable farming could be paved.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgf495095" class="outline-2">
+<h2 id="orgf495095"><span class="section-number-2">4</span> Pictures</h2>
+<div class="outline-text-2" id="text-4">
+
+<div class="figure">
+<p><img src="./images/pic1.jpg" alt="pic1.jpg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./images/pic2.jpg" alt="pic2.jpg" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./images/pic3.jpg" alt="pic3.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org417eb40" class="outline-2">
+<h2 id="org417eb40"><span class="section-number-2">5</span> About Me</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+I am tied to the idea "Small is Beautiful" and does farming
+in my native village over the weekends.  I attribute most of
+the problems that afflict us today to bigness.  I am also of
+the firm belief that bigness takes away the connection
+between man and nature and allows one to sheild from owning
+responsiblity for the irreparable damage being done to
+EARTH.
+</p>
+
+
+<div class="figure">
+<p><img src="./images/about.jpg" alt="about.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3a1b42a" class="outline-2">
+<h2 id="org3a1b42a"><span class="section-number-2">6</span> Why does this happen?</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Agriculture is indeed not much different from child rearing.  The
+responsibility and the associated joy seem to be present in both the
+activities.  But in the prevailing conditions, does the farmer have the
+luxury to look at that way? The farmer has to wage a battle against high
+input costs, low prices for his produce, vagaries of the climate, to earn a
+decent livelihood.  Institutional support - banks, market places,
+co-operative societies, insurance policies - is either non existent or is
+being dismantled if any by the neoliberal policies being pursued by the
+government.  This leaves the farmer in a desperate situation forbidding any
+joy in his profession and in the process forcing him to adopt various
+unsustainable methods in the hope of staying afloat the wrecked ship - the
+agriculture.  The only choice left before the farmer to offset the high input
+costs and low output prices is to raise the output.  The farmer without
+realizing enters into a vicious cycle: to increase the output, he applies
+higher doses of fertilizer, pesticides thereby increasing the input costs and
+in the process agriculture is re-laid on the lines of factory production.
+The practices would increase production in the short term but have
+deleterious affects in the long term.  Unlike in assembly line production,
+dependence of harvest on multiple factors - pests, rainfall, climate (modern
+agricultural practices are inadequate to ensure flowering and the ratio of
+flowers that would turn into fruit), etc - leaves a farmer moored to a
+mountain of debt.  This situation has forced an exodus from farming leaving
+only either the brave or for whom agriculture is the only option.  Our model
+here would alleviate the condition of the farmer by raising the output price.
+This would increase the number of factors to two - size of produce and price
+of produce - that a farmer can depend on for the viability of his profession
+and provide breathing space to rethink on the present practices of farming.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c07add" class="outline-2">
+<h2 id="org5c07add"><span class="section-number-2">7</span> The FUTURE</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+A new future hinges on the success of this initial offering of KissanDirect.
+Transparency should be the pre-requisite for any business and a consumers'
+right. With the proliferation of internet devices (3G/4G), farmers and
+consumers can connect directly and KissanDirect can provide the platform for
+it.  What KissanDirect can do for a consumer:
+</p>
+
+<ol class="org-ol">
+<li>ensure the quality of produce as promised by the farmer</li>
+<li>provide mechanism for delivery to the consumer</li>
+<li>provide a barcode to the produce that a consumer buys which can hold
+information about:
+<ol class="org-ol">
+<li>quality of the soil,</li>
+<li>nutritional level of the produce,</li>
+<li>the day of harvest,</li>
+<li>number of miles the produce traveled and other relevant information
+that a consumer deems necessary for him to make a qualified decision.</li>
+</ol></li>
+</ol>
+
+<p>
+These should enable a consumer to have all the information about each morsel
+of food that she eats.  On the production side KissanDirect can ensure the
+farmer is the sole beneficiary by eliminating all the middlemen.  Small scale
+solar powered processing industries can be set in the villages to process the
+produce like milling rice or pulses, extracting oil form seeds.  These will
+not only provide employment in the villages but could transform the villages
+into cash rich self sustaining units that can finance building modern urban
+facilities like sewerage lines, water lines, proper schools, hospitals etc.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-05-26 Thu 00:00</p>
+<p class="author">Author: Thirumal Ravula</p>
+<p class="date">Created: 2022-05-26 Thu 21:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
