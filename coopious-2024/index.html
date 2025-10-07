@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-07-11 Thu 18:04 -->
+<!-- 2025-10-07 Tue 19:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Coopious - Copious Cooperation</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Thirumal Ravula" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -161,6 +162,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,8 +191,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../style/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="../style/css/readtheorg.css"/>
@@ -186,84 +199,38 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../style/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="../style/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href="../index.html"> UP </a>
  |
  <a accesskey="H" href="../index.html"> HOME </a>
-</div><div id="content">
+</div><div id="content" class="content">
 <h1 class="title">Coopious - Copious Cooperation</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga64ba08">1. Motivation</a></li>
-<li><a href="#org8e46d0e">2. At a Glance</a></li>
-<li><a href="#org54f48c2">3. Place your order</a></li>
-<li><a href="#orgf9c32d7">4. Plan</a></li>
-<li><a href="#orga5ebfb5">5. Benefits of buying from Coopious</a></li>
-<li><a href="#org7f514da">6. Pictures</a></li>
-<li><a href="#org8e4aae4">7. About Me</a></li>
-<li><a href="#org1ebda06">8. Why does this happen?</a></li>
-<li><a href="#orgc341db9">9. The FUTURE</a></li>
+<li><a href="#orgbb5432c">1. Motivation</a></li>
+<li><a href="#org915b3f4">2. At a Glance</a></li>
+<li><a href="#org6c71a79">3. Place your order</a></li>
+<li><a href="#orgc1d9b43">4. Plan</a></li>
+<li><a href="#org4a87aab">5. Benefits of buying from Coopious</a></li>
+<li><a href="#org0acd228">6. Pictures</a></li>
+<li><a href="#org13353f3">7. About Me</a></li>
+<li><a href="#orgae761af">8. Why does this happen?</a></li>
+<li><a href="#org18fe83a">9. The FUTURE</a></li>
 </ul>
 </div>
 </div>
 
-<div class="figure">
+<div id="org02eb20e" class="figure">
 <p><img src="../images/logo.jpg" alt="logo.jpg" />
 </p>
 </div>
 
-<div id="outline-container-orga64ba08" class="outline-2">
-<h2 id="orga64ba08"><span class="section-number-2">1</span> Motivation</h2>
+<div id="outline-container-orgbb5432c" class="outline-2">
+<h2 id="orgbb5432c"><span class="section-number-2">1.</span> Motivation</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 It is a modest effort but a revolutionary one to connect
@@ -277,8 +244,8 @@ and the consumer.
 </div>
 </div>
 
-<div id="outline-container-org8e46d0e" class="outline-2">
-<h2 id="org8e46d0e"><span class="section-number-2">2</span> At a Glance</h2>
+<div id="outline-container-org915b3f4" class="outline-2">
+<h2 id="org915b3f4"><span class="section-number-2">2.</span> At a Glance</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>Variety: Banginapalli (Benishaan)</li>
@@ -288,8 +255,8 @@ and the consumer.
 </div>
 </div>
 
-<div id="outline-container-org54f48c2" class="outline-2">
-<h2 id="org54f48c2"><span class="section-number-2">3</span> Place your order</h2>
+<div id="outline-container-org6c71a79" class="outline-2">
+<h2 id="org6c71a79"><span class="section-number-2">3.</span> Place your order</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The boxes are in 5kg and 10 kg, I have listed in the form
@@ -308,8 +275,8 @@ IIIT Faculty, please fill this <a href="https://forms.gle/Df4EK8MajUdomRTj7">for
 </div>
 </div>
 
-<div id="outline-container-orgf9c32d7" class="outline-2">
-<h2 id="orgf9c32d7"><span class="section-number-2">4</span> Plan</h2>
+<div id="outline-container-orgc1d9b43" class="outline-2">
+<h2 id="orgc1d9b43"><span class="section-number-2">4.</span> Plan</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 I will be harvesting as the fruit is ripening on the tree
@@ -326,8 +293,8 @@ travula@gmail.com and phone number is 9490448747.
 </div>
 
 
-<div id="outline-container-orga5ebfb5" class="outline-2">
-<h2 id="orga5ebfb5"><span class="section-number-2">5</span> Benefits of buying from Coopious</h2>
+<div id="outline-container-org4a87aab" class="outline-2">
+<h2 id="org4a87aab"><span class="section-number-2">5.</span> Benefits of buying from Coopious</h2>
 <div class="outline-text-2" id="text-5">
 <ol class="org-ol">
 <li>The mangoes are harvested only after they reach the
@@ -349,17 +316,17 @@ towards sustainable farming could be paved.</li>
 </div>
 
 
-<div id="outline-container-org7f514da" class="outline-2">
-<h2 id="org7f514da"><span class="section-number-2">6</span> Pictures</h2>
+<div id="outline-container-org0acd228" class="outline-2">
+<h2 id="org0acd228"><span class="section-number-2">6.</span> Pictures</h2>
 <div class="outline-text-2" id="text-6">
 
-<div class="figure">
+<div id="org29f4827" class="figure">
 <p><img src="./images/pic5.jpg" alt="pic5.jpg" />
 </p>
 </div>
 
 
-<div class="figure">
+<div id="org052f0ec" class="figure">
 <p><img src="./images/pic6.jpg" alt="pic6.jpg" />
 </p>
 </div>
@@ -373,33 +340,33 @@ towards sustainable farming could be paved.</li>
 </div>
 
 
-<div class="figure">
+<div id="org3d2034e" class="figure">
 <p><img src="./images/pic7.jpg" alt="pic7.jpg" />
 </p>
 </div>
 
 
-<div class="figure">
+<div id="orgb8d57e2" class="figure">
 <p><img src="./images/pic8.jpg" alt="pic8.jpg" />
 </p>
 </div>
 
 
-<div class="figure">
+<div id="org7806d56" class="figure">
 <p><img src="./images/pic9.jpg" alt="pic9.jpg" />
 </p>
 </div>
 
 
-<div class="figure">
+<div id="org5f1fb55" class="figure">
 <p><img src="./images/pic10.jpg" alt="pic10.jpg" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8e4aae4" class="outline-2">
-<h2 id="org8e4aae4"><span class="section-number-2">7</span> About Me</h2>
+<div id="outline-container-org13353f3" class="outline-2">
+<h2 id="org13353f3"><span class="section-number-2">7.</span> About Me</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 I am tied to the idea "Small is Beautiful" and does farming
@@ -412,7 +379,7 @@ EARTH.
 </p>
 
 
-<div class="figure">
+<div id="orgd74812a" class="figure">
 <p><img src="./images/about.jpg" alt="about.jpg" />
 </p>
 </div>
@@ -420,8 +387,8 @@ EARTH.
 </div>
 
 
-<div id="outline-container-org1ebda06" class="outline-2">
-<h2 id="org1ebda06"><span class="section-number-2">8</span> Why does this happen?</h2>
+<div id="outline-container-orgae761af" class="outline-2">
+<h2 id="orgae761af"><span class="section-number-2">8.</span> Why does this happen?</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Agriculture is indeed not much different from child rearing.  The
@@ -455,8 +422,8 @@ and provide breathing space to rethink on the present practices of farming.
 </div>
 </div>
 
-<div id="outline-container-orgc341db9" class="outline-2">
-<h2 id="orgc341db9"><span class="section-number-2">9</span> The FUTURE</h2>
+<div id="outline-container-org18fe83a" class="outline-2">
+<h2 id="org18fe83a"><span class="section-number-2">9.</span> The FUTURE</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 A new future hinges on the success of this initial
@@ -504,8 +471,8 @@ lines, water lines, proper schools, hospitals etc.
 <div id="postamble" class="status">
 <p class="date">Date: 2024-05-17 Fri 00:00</p>
 <p class="author">Author: Thirumal Ravula</p>
-<p class="date">Created: 2024-07-11 Thu 18:04</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2025-10-07 Tue 19:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

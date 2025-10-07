@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-07-11 Thu 18:04 -->
+<!-- 2025-10-07 Tue 19:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stating the Problem</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Thirumal Ravula," />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -161,6 +162,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,8 +191,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../style/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="../style/css/readtheorg.css"/>
@@ -186,96 +199,50 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../style/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="../style/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href="../index.html"> UP </a>
  |
  <a accesskey="H" href="../index.html"> HOME </a>
-</div><div id="content">
+</div><div id="content" class="content">
 <h1 class="title">Stating the Problem</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcfdbbde">1. Introduction</a></li>
-<li><a href="#org4c98436">2. Problem</a>
+<li><a href="#org045f640">1. Introduction</a></li>
+<li><a href="#org33f464c">2. Problem</a>
 <ul>
-<li><a href="#org8de6ed4">2.1. Current Situation</a></li>
-<li><a href="#orgeec7909">2.2. Situation Made worse</a></li>
-<li><a href="#org44e2494">2.3. Alternatives</a></li>
+<li><a href="#org89d874a">2.1. Current Situation</a></li>
+<li><a href="#orgb6d7210">2.2. Situation Made worse</a></li>
+<li><a href="#orgbcf2ba0">2.3. Alternatives</a></li>
 </ul>
 </li>
-<li><a href="#org813e2e9">3. Approach</a>
+<li><a href="#orgd139e0c">3. Approach</a>
 <ul>
-<li><a href="#orgdcb8621">3.1. Economy as a federation of Cooperatives</a></li>
-<li><a href="#org5b0b5ce">3.2. Attributes of the Cooperatives</a></li>
-<li><a href="#org583b855">3.3. Application of Systems and Actor Systems Dynamic Theory</a></li>
-<li><a href="#org167dc5c">3.4. System Actors as Primitives</a></li>
+<li><a href="#orgdc080aa">3.1. Economy as a federation of Cooperatives</a></li>
+<li><a href="#org4c4beab">3.2. Attributes of the Cooperatives</a></li>
+<li><a href="#org87088d1">3.3. Application of Systems and Actor Systems Dynamic Theory</a></li>
+<li><a href="#org769b9bf">3.4. System Actors as Primitives</a></li>
 </ul>
 </li>
-<li><a href="#org9c4ae7f">4. Solution</a>
+<li><a href="#orga570f97">4. Solution</a>
 <ul>
-<li><a href="#org8062aa7">4.1. Challenges to get a platform cooperative off the ground</a></li>
-<li><a href="#org243ffd9">4.2. Prevalent Ideas</a></li>
-<li><a href="#org5bcd9b3">4.3. The Kernel is a set of Actors</a></li>
+<li><a href="#org23f4f3f">4.1. Challenges to get a platform cooperative off the ground</a></li>
+<li><a href="#orgb2f0289">4.2. Prevalent Ideas</a></li>
+<li><a href="#org487001d">4.3. The Kernel is a set of Actors</a></li>
 </ul>
 </li>
-<li><a href="#org26ed834">5. Implementation</a></li>
-<li><a href="#orgce60943">6. Validation</a></li>
-<li><a href="#org842b689">7. Resources</a></li>
+<li><a href="#org16e7001">5. Implementation</a></li>
+<li><a href="#org7dffdef">6. Validation</a></li>
+<li><a href="#orgdb3f8b4">7. Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcfdbbde" class="outline-2">
-<h2 id="orgcfdbbde"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-org045f640" class="outline-2">
+<h2 id="org045f640"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 During this presentation, we state the problem for Phd.
@@ -283,8 +250,8 @@ During this presentation, we state the problem for Phd.
 </div>
 </div>
 
-<div id="outline-container-org4c98436" class="outline-2">
-<h2 id="org4c98436"><span class="section-number-2">2</span> Problem</h2>
+<div id="outline-container-org33f464c" class="outline-2">
+<h2 id="org33f464c"><span class="section-number-2">2.</span> Problem</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Facilitate building alternative forms of economic
@@ -292,8 +259,8 @@ organizations that are equitable and sustainable.
 </p>
 </div>
 
-<div id="outline-container-org8de6ed4" class="outline-3">
-<h3 id="org8de6ed4"><span class="section-number-3">2.1</span> Current Situation</h3>
+<div id="outline-container-org89d874a" class="outline-3">
+<h3 id="org89d874a"><span class="section-number-3">2.1.</span> Current Situation</h3>
 <div class="outline-text-3" id="text-2-1">
 <ol class="org-ol">
 <li>Modern rational nation states are built upon the
@@ -307,8 +274,8 @@ facilitate such alternatives?</li>
 </div>
 </div>
 
-<div id="outline-container-orgeec7909" class="outline-3">
-<h3 id="orgeec7909"><span class="section-number-3">2.2</span> Situation Made worse</h3>
+<div id="outline-container-orgb6d7210" class="outline-3">
+<h3 id="orgb6d7210"><span class="section-number-3">2.2.</span> Situation Made worse</h3>
 <div class="outline-text-3" id="text-2-2">
 <ol class="org-ol">
 <li>Arrival of gig economy.</li>
@@ -318,8 +285,8 @@ non-transparent, and are extractive.</li>
 </div>
 </div>
 
-<div id="outline-container-org44e2494" class="outline-3">
-<h3 id="org44e2494"><span class="section-number-3">2.3</span> Alternatives</h3>
+<div id="outline-container-orgbcf2ba0" class="outline-3">
+<h3 id="orgbcf2ba0"><span class="section-number-3">2.3.</span> Alternatives</h3>
 <div class="outline-text-3" id="text-2-3">
 <ol class="org-ol">
 <li>Worker Ownership</li>
@@ -330,12 +297,12 @@ provider to be the major beneficiary.</li>
 </div>
 </div>
 
-<div id="outline-container-org813e2e9" class="outline-2">
-<h2 id="org813e2e9"><span class="section-number-2">3</span> Approach</h2>
+<div id="outline-container-orgd139e0c" class="outline-2">
+<h2 id="orgd139e0c"><span class="section-number-2">3.</span> Approach</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgdcb8621" class="outline-3">
-<h3 id="orgdcb8621"><span class="section-number-3">3.1</span> Economy as a federation of Cooperatives</h3>
+<div id="outline-container-orgdc080aa" class="outline-3">
+<h3 id="orgdc080aa"><span class="section-number-3">3.1.</span> Economy as a federation of Cooperatives</h3>
 <div class="outline-text-3" id="text-3-1">
 <ol class="org-ol">
 <li>Every service provider is a cooperative</li>
@@ -344,8 +311,8 @@ provider to be the major beneficiary.</li>
 </div>
 </div>
 
-<div id="outline-container-org5b0b5ce" class="outline-3">
-<h3 id="org5b0b5ce"><span class="section-number-3">3.2</span> Attributes of the Cooperatives</h3>
+<div id="outline-container-org4c4beab" class="outline-3">
+<h3 id="org4c4beab"><span class="section-number-3">3.2.</span> Attributes of the Cooperatives</h3>
 <div class="outline-text-3" id="text-3-2">
 <ol class="org-ol">
 <li>Democratic</li>
@@ -356,10 +323,10 @@ provider to be the major beneficiary.</li>
 </div>
 </div>
 
-<div id="outline-container-org583b855" class="outline-3">
-<h3 id="org583b855"><span class="section-number-3">3.3</span> Application of Systems and Actor Systems Dynamic Theory</h3>
+<div id="outline-container-org87088d1" class="outline-3">
+<h3 id="org87088d1"><span class="section-number-3">3.3.</span> Application of Systems and Actor Systems Dynamic Theory</h3>
 <div class="outline-text-3" id="text-3-3">
-<pre class="example">
+<pre class="example" id="orgd6d513a">
 The trick, as with all the behavioral possibilities
 of complex systems, is to recognize what structures
 contain which latent behaviors, and what conditions
@@ -396,8 +363,8 @@ alternatives.</li>
 </div>
 </div>
 
-<div id="outline-container-org167dc5c" class="outline-3">
-<h3 id="org167dc5c"><span class="section-number-3">3.4</span> System Actors as Primitives</h3>
+<div id="outline-container-org769b9bf" class="outline-3">
+<h3 id="org769b9bf"><span class="section-number-3">3.4.</span> System Actors as Primitives</h3>
 <div class="outline-text-3" id="text-3-4">
 <ol class="org-ol">
 <li>System Actor is a system that functions in some
@@ -419,12 +386,12 @@ multicomponent environment, Mark Burgin
 </div>
 </div>
 
-<div id="outline-container-org9c4ae7f" class="outline-2">
-<h2 id="org9c4ae7f"><span class="section-number-2">4</span> Solution</h2>
+<div id="outline-container-orga570f97" class="outline-2">
+<h2 id="orga570f97"><span class="section-number-2">4.</span> Solution</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org8062aa7" class="outline-3">
-<h3 id="org8062aa7"><span class="section-number-3">4.1</span> Challenges to get a platform cooperative off the ground</h3>
+<div id="outline-container-org23f4f3f" class="outline-3">
+<h3 id="org23f4f3f"><span class="section-number-3">4.1.</span> Challenges to get a platform cooperative off the ground</h3>
 <div class="outline-text-3" id="text-4-1">
 <ol class="org-ol">
 <li>Mobilize the Capital</li>
@@ -442,8 +409,8 @@ Foundation
 </div>
 </div>
 
-<div id="outline-container-org243ffd9" class="outline-3">
-<h3 id="org243ffd9"><span class="section-number-3">4.2</span> Prevalent Ideas</h3>
+<div id="outline-container-orgb2f0289" class="outline-3">
+<h3 id="orgb2f0289"><span class="section-number-3">4.2.</span> Prevalent Ideas</h3>
 <div class="outline-text-3" id="text-4-2">
 <ol class="org-ol">
 <li>A kernel to support Platform Cooperatives, in a open
@@ -460,8 +427,8 @@ platforms in isolation.</li>
 </div>
 </div>
 
-<div id="outline-container-org5bcd9b3" class="outline-3">
-<h3 id="org5bcd9b3"><span class="section-number-3">4.3</span> The Kernel is a set of Actors</h3>
+<div id="outline-container-org487001d" class="outline-3">
+<h3 id="org487001d"><span class="section-number-3">4.3.</span> The Kernel is a set of Actors</h3>
 <div class="outline-text-3" id="text-4-3">
 <ol class="org-ol">
 <li>The proposal is to build the kernel as a set of Actors
@@ -478,8 +445,8 @@ larger system.</li>
 </div>
 </div>
 
-<div id="outline-container-org26ed834" class="outline-2">
-<h2 id="org26ed834"><span class="section-number-2">5</span> Implementation</h2>
+<div id="outline-container-org16e7001" class="outline-2">
+<h2 id="org16e7001"><span class="section-number-2">5.</span> Implementation</h2>
 <div class="outline-text-2" id="text-5">
 <ol class="org-ol">
 <li>Form a non governmental organization that evangelizes
@@ -489,8 +456,8 @@ each one cooperates with each other.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgce60943" class="outline-2">
-<h2 id="orgce60943"><span class="section-number-2">6</span> Validation</h2>
+<div id="outline-container-org7dffdef" class="outline-2">
+<h2 id="org7dffdef"><span class="section-number-2">6.</span> Validation</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Establish a feedback loop between the working coops, the
@@ -499,8 +466,8 @@ design of software and the system models.
 </div>
 </div>
 
-<div id="outline-container-org842b689" class="outline-2">
-<h2 id="org842b689"><span class="section-number-2">7</span> Resources</h2>
+<div id="outline-container-orgdb3f8b4" class="outline-2">
+<h2 id="orgdb3f8b4"><span class="section-number-2">7.</span> Resources</h2>
 <div class="outline-text-2" id="text-7">
 <ol class="org-ol">
 <li>The New Systems Project, <a href="https://thenextsystem.org/systems">https://thenextsystem.org/systems</a></li>
@@ -516,8 +483,8 @@ design of software and the system models.
 <div id="postamble" class="status">
 <p class="date">Date: 2019-05-05 Sun 00:00</p>
 <p class="author">Author: Thirumal Ravula,</p>
-<p class="date">Created: 2024-07-11 Thu 18:04</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2025-10-07 Tue 19:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

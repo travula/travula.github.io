@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-07-11 Thu 18:05 -->
+<!-- 2025-10-07 Tue 19:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Musings</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Thirumal Ravula" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -161,6 +162,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,8 +191,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="./style/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="./style/css/readtheorg.css"/>
@@ -186,86 +199,40 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./style/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="./style/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href="./index.html"> UP </a>
  |
  <a accesskey="H" href="./index.html"> HOME </a>
-</div><div id="content">
+</div><div id="content" class="content">
 <h1 class="title">Musings</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgaafa91f">1. Introduction</a></li>
-<li><a href="#orgcb8a5dd">2. Stating the problem for Phd.</a></li>
-<li><a href="#org8b6614d">3. Coop Services</a>
+<li><a href="#orgf134e72">1. Introduction</a></li>
+<li><a href="#org170214b">2. Stating the problem for Phd.</a></li>
+<li><a href="#org4346911">3. Coop Services</a>
 <ul>
-<li><a href="#org06a7a5c">3.1. First Insight</a></li>
-<li><a href="#org835d6bc">3.2. More Insights</a></li>
+<li><a href="#orgda1dfa4">3.1. First Insight</a></li>
+<li><a href="#orgf0ca5e5">3.2. More Insights</a></li>
 </ul>
 </li>
-<li><a href="#org9992c26">4. Trips</a></li>
-<li><a href="#org1bf1bc2">5. Our Current Society</a></li>
-<li><a href="#org66928e8">6. Kissan Cooperative</a></li>
-<li><a href="#org56191a6">7. Progress on Phd</a></li>
-<li><a href="#org7e223b6">8. Youth Center</a></li>
-<li><a href="#org14daa11">9. Computer Center</a></li>
-<li><a href="#org06c2c4b">10. About Me</a></li>
+<li><a href="#orgd48c97c">4. Trips</a></li>
+<li><a href="#org6b1c82c">5. Our Current Society</a></li>
+<li><a href="#orgf5c7442">6. Kissan Cooperative</a></li>
+<li><a href="#org2f7331e">7. Progress on Phd</a></li>
+<li><a href="#orgdcfacba">8. Youth Center</a></li>
+<li><a href="#org3d08abd">9. Computer Center</a></li>
+<li><a href="#orgc3811c2">10. About Me</a></li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-orgaafa91f" class="outline-2">
-<h2 id="orgaafa91f"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orgf134e72" class="outline-2">
+<h2 id="orgf134e72"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 These are some of my jottings which I do rarely but of late want to do more
@@ -274,8 +241,8 @@ often.
 </div>
 </div>
 
-<div id="outline-container-orgcb8a5dd" class="outline-2">
-<h2 id="orgcb8a5dd"><span class="section-number-2">2</span> <a href="./papers/index.html">Stating the problem for Phd</a>.</h2>
+<div id="outline-container-org170214b" class="outline-2">
+<h2 id="org170214b"><span class="section-number-2">2.</span> <a href="./papers/index.html">Stating the problem for Phd</a>.</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I see a potential for computation in understanding our
@@ -288,8 +255,8 @@ articulating the problem.
 </div>
 </div>
 
-<div id="outline-container-org8b6614d" class="outline-2">
-<h2 id="org8b6614d"><span class="section-number-2">3</span> Coop Services</h2>
+<div id="outline-container-org4346911" class="outline-2">
+<h2 id="org4346911"><span class="section-number-2">3.</span> Coop Services</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 One of the solutions for a sustainable and equitable world
@@ -299,15 +266,15 @@ and information flow allow to build such worker owned
 cooperatives?
 </p>
 </div>
-<div id="outline-container-org06a7a5c" class="outline-3">
-<h3 id="org06a7a5c"><span class="section-number-3">3.1</span> <a href="./insights/index.html">First Insight</a></h3>
+<div id="outline-container-orgda1dfa4" class="outline-3">
+<h3 id="orgda1dfa4"><span class="section-number-3">3.1.</span> <a href="./insights/index.html">First Insight</a></h3>
 </div>
-<div id="outline-container-org835d6bc" class="outline-3">
-<h3 id="org835d6bc"><span class="section-number-3">3.2</span> <a href="./insights/more-insights.html">More Insights</a></h3>
+<div id="outline-container-orgf0ca5e5" class="outline-3">
+<h3 id="orgf0ca5e5"><span class="section-number-3">3.2.</span> <a href="./insights/more-insights.html">More Insights</a></h3>
 </div>
 </div>
-<div id="outline-container-org9992c26" class="outline-2">
-<h2 id="org9992c26"><span class="section-number-2">4</span> <a href="./trips/index.html">Trips</a></h2>
+<div id="outline-container-orgd48c97c" class="outline-2">
+<h2 id="orgd48c97c"><span class="section-number-2">4.</span> <a href="./trips/index.html">Trips</a></h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Index to <a href="./trips/index.html">trips</a>
@@ -315,16 +282,16 @@ Index to <a href="./trips/index.html">trips</a>
 </div>
 </div>
 
-<div id="outline-container-org1bf1bc2" class="outline-2">
-<h2 id="org1bf1bc2"><span class="section-number-2">5</span> <a href="./social/index.html">Our Current Society</a></h2>
+<div id="outline-container-org6b1c82c" class="outline-2">
+<h2 id="org6b1c82c"><span class="section-number-2">5.</span> <a href="./social/index.html">Our Current Society</a></h2>
 <div class="outline-text-2" id="text-5">
 <p>
 <a href="./social/index.html">Perspectives</a> on where we are headed
 </p>
 </div>
 </div>
-<div id="outline-container-org66928e8" class="outline-2">
-<h2 id="org66928e8"><span class="section-number-2">6</span> Kissan Cooperative</h2>
+<div id="outline-container-orgf5c7442" class="outline-2">
+<h2 id="orgf5c7442"><span class="section-number-2">6.</span> Kissan Cooperative</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 <a href="./kissan-coop/index.html">Memo for a Kissan Cooperative</a>
@@ -332,32 +299,32 @@ Index to <a href="./trips/index.html">trips</a>
 </div>
 </div>
 
-<div id="outline-container-org56191a6" class="outline-2">
-<h2 id="org56191a6"><span class="section-number-2">7</span> Progress on Phd</h2>
+<div id="outline-container-org2f7331e" class="outline-2">
+<h2 id="org2f7331e"><span class="section-number-2">7.</span> Progress on Phd</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 <a href="./progress/index.html">Index</a> to the progress.
 </p>
 </div>
 </div>
-<div id="outline-container-org7e223b6" class="outline-2">
-<h2 id="org7e223b6"><span class="section-number-2">8</span> Youth Center</h2>
+<div id="outline-container-orgdcfacba" class="outline-2">
+<h2 id="orgdcfacba"><span class="section-number-2">8.</span> Youth Center</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 <a href="./youth-center/index.html">Index</a> to building the center.
 </p>
 </div>
 </div>
-<div id="outline-container-org14daa11" class="outline-2">
-<h2 id="org14daa11"><span class="section-number-2">9</span> Computer Center</h2>
+<div id="outline-container-org3d08abd" class="outline-2">
+<h2 id="org3d08abd"><span class="section-number-2">9.</span> Computer Center</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 <a href="./computer-center/index.html">Index</a> to building the computer center.
 </p>
 </div>
 </div>
-<div id="outline-container-org06c2c4b" class="outline-2">
-<h2 id="org06c2c4b"><span class="section-number-2">10</span> About Me</h2>
+<div id="outline-container-orgc3811c2" class="outline-2">
+<h2 id="orgc3811c2"><span class="section-number-2">10.</span> About Me</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 <a href="./about/index.html">Index</a> to who I am.
@@ -368,8 +335,8 @@ Index to <a href="./trips/index.html">trips</a>
 <div id="postamble" class="status">
 <p class="date">Date: 2024-05-23 Thu 00:00</p>
 <p class="author">Author: Thirumal Ravula</p>
-<p class="date">Created: 2024-07-11 Thu 18:05</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2025-10-07 Tue 19:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
